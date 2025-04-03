@@ -64,6 +64,31 @@
             </div>
         </footer>
         </div>
+        <!-- Reproductor -->
+        <div id="player" class="fixed-bottom player-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div id="nowPlaying">No se está reproduciendo nada</div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <audio id="audioPlayer" controls></audio>
+                    </div>
+                    <div class="col-md-4 text-end">
+                        <button id="showLyrics" class="btn btn-sm btn-outline-secondary">Letra</button>
+        <!-- Modales -->
+        <div id="addSongModal" class="modal fade" tabindex="-1">
+            <!-- Contenido del modal -->
+        </div>
+        
+        <div id="statsModal" class="modal fade" tabindex="-1">
+            <!-- Contenido del modal de estadísticas -->
+        </div>
+        
+        <div id="aboutModal" class="modal fade" tabindex="-1">
+            <!-- Contenido del modal "Acerca de" -->
+        </div>
+    </div>
         
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/Action.js"></script>
