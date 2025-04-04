@@ -8,20 +8,20 @@
     
     <meta name="author" content="johan.paz@unah.hn">
     <meta name="author" content="fcardonab@unah.hn">
-    <meta name="author" content="******@unah.hn">
+    <meta name="author" content="ssalinasr@unah.hn">
     <meta name="author" content="******@unah.hn">
 	
 	<meta name="version" content="0.1.0">
 	
-	<meta name="date" content="2025/04/1">
-	<meta name="since" content="2025/04/1">
+	<meta name="date" content="2025/04/04">
+	<meta name="since" content="2025/04/01">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css>
     
 </head>
-<body class="light-theme">
+<body class="light-theme"> 
     <div class="container-fluid">
         <!-- Menú superior -->
         <header class="row py-3">
@@ -95,7 +95,8 @@
         </div>
  
         
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <!-- 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>  -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/Action.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
