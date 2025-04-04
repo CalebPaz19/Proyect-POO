@@ -23,15 +23,13 @@
 </head>
 <body class="light-theme">
     <div class="container-fluid">
-    
         <!-- Menú superior -->
         <header class="row py-3">
             <div class="col-md-6">
                 <h1 class="logo">MusicPlayer</h1>
             </div>
-            
             <div class="col-md-6 text-end">
-                <button id="changeThemebtn" class="btn btn-outline-secondary me-2">
+                <button id="themeToggle" class="btn btn-outline-secondary me-2">
                     <i class="bi bi-moon-fill"></i> Cambiar Tema
                 </button>
                 <button id="statsBtn" class="btn btn-primary">
@@ -49,7 +47,6 @@
                 </div>
             </div>
         </main>
-        
         <!-- Menú inferior -->
         <footer class="row py-3 mt-4 border-top">
             <div class="col-md-4">
@@ -67,19 +64,23 @@
             </div>
         </footer>
         </div>
-        
         <!-- Reproductor -->
-        <div id="player" class="fixed-bottom player-bar">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div id="nowPlaying">No se está reproduciendo nada</div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <audio id="audioPlayer" controls></audio>
-                    </div>
-                    <div class="col-md-4 text-end">
-                        <button id="showLyrics" class="btn btn-sm btn-outline-secondary">Letra</button>
+      <!-- Reproductor (inicialmente oculto con clase hidden) -->
+<div id="player" class="fixed-bottom player-bar hidden">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <div class="now-playing">Reproduciendo: <span class="current-song-title"></span></div>
+            </div>
+            <div class="col-md-4 text-center">
+                <audio class="audio-player" controls></audio>
+            </div>
+            <div class="col-md-4 text-end">
+                <button class="show-lyrics btn btn-sm btn-outline-secondary">Letra</button>
+            </div>
+        </div>
+    </div>
+</div>
         <!-- Modales -->
         <div id="addSongModal" class="modal fade" tabindex="-1">
             <!-- Contenido del modal -->
@@ -92,7 +93,7 @@
         <div id="aboutModal" class="modal fade" tabindex="-1">
             <!-- Contenido del modal "Acerca de" -->
         </div>
-    </div>
+ 
         
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/Action.js"></script>
