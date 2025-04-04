@@ -23,13 +23,15 @@
 </head>
 <body class="light-theme">
     <div class="container-fluid">
+    
         <!-- Menú superior -->
         <header class="row py-3">
             <div class="col-md-6">
                 <h1 class="logo">MusicPlayer</h1>
             </div>
+            
             <div class="col-md-6 text-end">
-                <button id="themeToggle" class="btn btn-outline-secondary me-2">
+                <button id="changeThemebtn" class="btn btn-outline-secondary me-2">
                     <i class="bi bi-moon-fill"></i> Cambiar Tema
                 </button>
                 <button id="statsBtn" class="btn btn-primary">
@@ -47,6 +49,7 @@
                 </div>
             </div>
         </main>
+        
         <!-- Menú inferior -->
         <footer class="row py-3 mt-4 border-top">
             <div class="col-md-4">
@@ -64,6 +67,7 @@
             </div>
         </footer>
         </div>
+        
         <!-- Reproductor -->
         <div id="player" class="fixed-bottom player-bar">
             <div class="container">
