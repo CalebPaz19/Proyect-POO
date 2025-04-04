@@ -29,7 +29,7 @@
                 <h1 class="logo">MusicPlayer</h1>
             </div>
             <div class="col-md-6 text-end">
-                <button id="themeToggle" class="btn btn-outline-secondary me-2">
+                <button id="changeThemebtn" class="btn btn-outline-secondary me-2">
                     <i class="bi bi-moon-fill"></i> Cambiar Tema
                 </button>
                 <button id="statsBtn" class="btn btn-primary">
