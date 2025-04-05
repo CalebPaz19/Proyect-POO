@@ -13,7 +13,7 @@
 	
 	<meta name="version" content="0.1.0">
 	
-	<meta name="date" content="2025/04/4">
+	<meta name="date" content="2025/04/1">
 	<meta name="since" content="2025/04/1">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
                 <button id="changeThemebtn" class="btn btn-outline-secondary me-2">
                     <i class="bi bi-moon-fill"></i> Cambiar Tema
                 </button>
-                <button id="statsBtn" class="btn btn-primary">
+                <button id="statsBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#statsModal">
                     <i class="bi bi-bar-chart-fill"></i> Estadísticas
                 </button>
             </div>
@@ -55,7 +55,7 @@
         <footer class="row py-3 mt-4 border-top">
         
             <div class="col-md-4">
-                <button id="addSongBtn" class="btn btn-success">
+                <button id="addSongBtn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addSongModal">
                     <i class="bi bi-plus-circle"></i> Agregar Canción
                 </button>
             </div>
@@ -91,7 +91,7 @@
 		</div>
 		        <!-- Modales con botones de cierre -->
 		<div id="addSongModal" class="modal fade" tabindex="-1">
-		    <div class="modal-dialog">
+		    <div class="modal-dialog modal-right">
 		        <div class="modal-content">
 		            <div class="modal-header">
 		                <h5 class="modal-title">Agregar Canción</h5>
@@ -109,7 +109,7 @@
 		</div>
 		
 		<div id="statsModal" class="modal fade" tabindex="-1">
-		    <div class="modal-dialog">
+		    <div class="modal-dialog modal-right">
 		        <div class="modal-content">
 		            <div class="modal-header">
 		                <h5 class="modal-title">Estadísticas</h5>
