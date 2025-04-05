@@ -1,1 +1,17 @@
-@charset "UTF-8";
+.modal-right {
+    position: fixed;
+    top: 0;
+    right: 0; /* Alinea el modal al lado derecho */
+    width: 40vw; /* Ajusta el ancho al 40% del viewport */
+    height: 100vh; /* Ocupa toda la altura del viewport */
+    margin: 0;
+}
+.modal-content{
+	height: 100%;
+	transition: all 0.3s;
+	z-index: 1000;
+	
+	
+}
+
+
