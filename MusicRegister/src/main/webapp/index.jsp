@@ -35,7 +35,11 @@
                 <button id="changeThemebtn" class="btn btn-outline-secondary me-2">
                     <i class="bi bi-moon-fill"></i> Cambiar Tema
                 </button>
-                <button id="statsBtn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#statsModal">
+                <button id="statsBtn" class="btn btn-primary" 
+		                data-title="Estadísticas"
+				        data-message="<p>Estadísticas de uso de la aplicación.</p>"
+				        data-header-class="bg-primary"
+				        data-footer="<button class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>">
                     <i class="bi bi-bar-chart-fill"></i> Estadísticas
                 </button>
             </div>
@@ -55,12 +59,22 @@
         <footer class="row py-3 mt-4 border-top">
         
             <div class="col-md-4">
-                <button id="addSongBtn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addSongModal">
+                <button id="addSongBtn" class="btn btn-success"
+                 		data-title="Agregar Canción"
+			        	data-message="<p>Formulario para agregar una nueva canción.</p>"
+			        	data-header-class="bg-success"
+			        	data-footer="<button class='btn btn-primary'>Guardar</button>">
                     <i class="bi bi-plus-circle"></i> Agregar Canción
                 </button>
             </div>
             <div class="col-md-4 text-center">
-                <button id="aboutBtn" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#aboutModal" >Acerca de</button>
+                <button id="aboutBtn" class="btn btn-outline-info" 
+		                data-title="Acerca de"
+				        data-message="<p>Este es un reproductor de música creado por el equipo de UNAH.</p>"
+				        data-header-class="bg-info"
+				        data-footer="<button class='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>">
+		        	Acerca de
+		        </button>
             </div>
             <div class="col-md-4 text-end">
                 <button id="clearDataBtn" class="btn btn-danger">
@@ -89,54 +103,19 @@
 		        </div>
 		    </div>
 		</div>
-		        <!-- Modales con botones de cierre -->
-		<div id="addSongModal" class="modal fade" tabindex="-1">
-		    <div class="modal-dialog modal-right">
-		        <div class="modal-content">
-		            <div class="modal-header">
-		                <h5 class="modal-title">Agregar Canción</h5>
-		                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		            </div>
-		            <div class="modal-body">
-		                <!-- Contenido del formulario -->
-		            </div>
-		            <div class="modal-footer">
-		                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-		                <button type="button" class="btn btn-primary">Guardar</button>
-		            </div>
-		        </div>
-		    </div>
-		</div>
 		
-		<div id="statsModal" class="modal fade" tabindex="-1">
-		    <div class="modal-dialog modal-right">
-		        <div class="modal-content">
-		            <div class="modal-header">
-		                <h5 class="modal-title">Estadísticas</h5>
-		                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		            </div>
-		            <div class="modal-body">
-		                <!-- Contenido de estadísticas -->
-		            </div>
-		            <div class="modal-footer">
-		                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-		            </div>
-		        </div>
-		    </div>
-		</div>
 		
-		<div id="aboutModal" class="modal fade" tabindex="-1">
+		<div id="dynamicModal" class="modal fade" tabindex="-1">
 		    <div class="modal-dialog modal-right" >
 		        <div class="modal-content">
 		            <div class="modal-header">
-		                <h5 class="modal-title">Acerca de</h5>
+		                <h5 class="modal-title" id="dynamicModalTitle">Titulo</h5>
 		                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		            </div>
-		            <div class="modal-body">
-		                <!-- Contenido acerca de -->
-		               <p>Contenido del modal</p>
+		            <div class="modal-body" id="dynamicModalBody">
+		               Contenido dinamico
 		            </div>
-		            <div class="modal-footer">
+		            <div class="modal-footer" id="dynamicModalFooter">
 		                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
 		            </div>
 		        </div>
@@ -144,7 +123,8 @@
 		</div>
 		
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/Action.js"></script>
+	<script src="assets/js/Theme.js"></script>
+	<script src="assets/js/Modal.js"></script>	
 	<script src="assets/js/main.js"></script>
 	
 	

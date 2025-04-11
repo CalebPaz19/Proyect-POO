@@ -4,7 +4,7 @@ const Configuration = {
 	"darkTheme": "dark"
 };
 
-class Action{
+class Theme{
 	
 	static changeThemeFromClick(who,event){
 		
@@ -30,4 +30,6 @@ class Action{
 		
 		who.dataset.bsTheme = currentTheme;
 	}
+	
+	
 }
