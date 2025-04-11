@@ -28,4 +28,28 @@ class Modal {
     close() {
         this.modal.hide();
     }
+	
+	
  }
+ 
+ const modalContents = {
+   addSong: {
+     headerClass: "bg-success",
+     title: "Agregar Canción",
+     body: `<p>Formulario para agregar una nueva canción.</p>`,
+     footer: `<button class="btn btn-primary">Guardar</button>`
+   },
+   about: {
+     headerClass: "bg-info",
+     title: "Acerca de",
+     body: `<p>Sistema desarrollado como proyecto para el curso de Programación Orientada a Objetos</p>
+ 			<p>Permite gestionar un catálogo musical con reproducción de canciones, organización por géneros y estadísticas de uso.</p>`,
+     footer: `<button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>`
+   },
+   stats: {
+     headerClass: "bg-primary",
+     title: "Estadísticas",
+     body: `<p>Estadísticas de uso de la aplicación.</p>`,
+     footer: `<button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>`
+   }
+ };

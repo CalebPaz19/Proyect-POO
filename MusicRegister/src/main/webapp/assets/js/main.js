@@ -13,17 +13,17 @@ const aboutButton = document.querySelector("button#aboutBtn");
 const statsButton = document.querySelector("button#statsBtn");
 
 
-aboutBtn.addEventListener("click",modal.open.bind(modal,"bg-info",
-    "Acerca de",
-    "<p>Este es un reproductor de música creado por el equipo de UNAH.</p>",
-    `<button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>`));
+aboutBtn.addEventListener("click",modal.open.bind(modal,modalContents.about.headerClass,
+   modalContents.about.title,
+   modalContents.about.body,
+   modalContents.about.footer));
 
-addSongButton.addEventListener("click",modal.open.bind(modal,"bg-success",
-	    "Agregar Canción",
-	    "<p>Formulario para agregar una nueva canción.</p>",
-	    `<button class="btn btn-primary">Guardar</button>`));
+addSongButton.addEventListener("click",modal.open.bind(modal,modalContents.addSong.headerClass,
+	    modalContents.addSong.title,
+	    modalContents.addSong.body,
+	    modalContents.addSong.footer));
 		
-statsButton.addEventListener("click",modal.open.bind(modal,"bg-primary",
-		    "Estadísticas",
-		    "<p>Estadísticas de uso de la aplicación.</p>",
-		    `<button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>`));
+statsButton.addEventListener("click",modal.open.bind(modal,modalContents.stats.headerClass,
+		    modalContents.stats.title,
+		    modalContents.stats.body,
+		    modalContents.stats.footer));
